@@ -14,6 +14,7 @@ Route::middleware(['auth'])->group(function (){
     Route::get('/home', 'PubgController@home')->name('pubg.home');
     Route::post('/logout', 'Auth\LoginController@logout')->name('pubg.logout');
     Route::post('/accept-team/{team_id}', 'PubgController@accept')->name('pubg.accept');
+    Route::get('/team-details/{team_id}', 'PubgController@teamDetails')->name('pubg.team_details');
 
 });
 Route::middleware(['guest'])->group(function (){

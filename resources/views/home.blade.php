@@ -29,14 +29,16 @@
                             @endforeach
                         </ul>
                     </td>
-                    <td>{{config('pubg.status.'.$team->status)}} @if(auth()->user()->status ==1 && $team->status==0) <a
+                    <td>{{config('pubg.status.'.$team->status)}} &nbsp;
+                        &nbsp; @if(auth()->user()->status ==1 && $team->status==0) <a
                                 class="btn btn-success" href="{{route('pubg.accept',$team->id)}}" onclick="event.preventDefault();
-                                                     document.getElementById('accept-team').submit();">Activate<i
-                                    class="fa fa-check-circle"></i></a>
+                                                     document.getElementById('accept-team').submit();"><i
+                                    class="fa fa-check-circle"></i> Activate</a>
                         <form id="accept-team" action="{{ route('pubg.accept',$team->id) }}" method="POST"
                               style="display: none;">
                             @csrf
                         </form>
+                        &nbsp; &nbsp; <a class="btn btn-info" href="{{route('pubg.team_details',$team->id)}}"><i class="fa fa-eye"></i> View Details</a>
                         @endif
                     </td>
                 </tr>
