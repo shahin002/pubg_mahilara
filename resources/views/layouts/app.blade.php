@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/font-awesome.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/styles.css')}}">
+    @yield('custom_style')
     <title>PUBG Tournament</title>
 </head>
 <body>
@@ -84,8 +85,23 @@
         @yield('content')
     </div>
 </div>
+<!-- Footer -->
+<footer class="">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© {{date('Y')}} Copyright:
+        <a href="https://www.facebook.com/shopnilsagar89"> Md. Saiful Islam Sagar</a>
+    </div>
+    <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 <script src="{{asset('assets/js/jquery.min.js')}}"></script>
-<script src="{{asset('assets/js/popper.min.js')}}"></script>
+<script type="module" src="{{asset('assets/js/popper.min.js')}}"></script>
 <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
+
+<script src="{{asset('assets/js/bootstrap-notify/bootstrap-notify.min.js')}}"></script>
+@yield('custom_js')
+@include('includes.notifications')
 </body>
 </html>

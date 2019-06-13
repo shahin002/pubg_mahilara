@@ -5,7 +5,7 @@
     <div class="rules">
         <h4 class="text-dark">Game Rules</h4>
         <ol>
-            <li>কোন টিমে হ্যাকার থাকলে টিম বাতিল বলে গন্য হবে।</li>
+            <li>কোন টিমে <span class="text-danger font-weight-bold"> হ্যাকার </span>থাকলে টিম বাতিল বলে গন্য হবে।</li>
             <li>ম্যাচ শেষে ম্যাচ Result-এর Screen Shot বাধ্যতামুলক Inbox-এ দিতে হবে।</li>
             <li>প্রত্যেক দলে ২ জন করে খেলোয়ার খেলতে পারবে।</li>
             <li>প্রত্যেক দলের আলাদা-আলাদা পোশাক থাকতে হবে।</li>

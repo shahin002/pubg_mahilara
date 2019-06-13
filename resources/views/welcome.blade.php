@@ -54,7 +54,7 @@
                     <label for="player1email">Email</label>
                     <input type="text" class="form-control @error('player1email') is-invalid @enderror"
                            id="player1email"
-                           name="player1email" value="{{old('player1email')}}" placeholder="Player Facebook Id link">
+                           name="player1email" value="{{old('player1email')}}" placeholder="Player Email Address">
                     @error('player1email')
                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -80,7 +80,7 @@
 
                     <input id="player1password" type="password" placeholder="Enter Player 1 Password"
                            class="form-control @error('player1password') is-invalid @enderror" name="player1password"
-                           required autocomplete="new-password">
+                            autocomplete="new-password">
 
                     @error('player1password')
                     <span class="invalid-feedback" role="alert">
@@ -92,7 +92,7 @@
                 <div class="form-group">
                     <label for="player1password-confirm">{{ __('Confirm Password') }}</label>
                     <input id="player1password-confirm" placeholder="Confirm Player 1 Password" type="password"
-                           class="form-control" name="player1password_confirmation" required
+                           class="form-control" name="player1password_confirmation"
                            autocomplete="new-password">
                 </div>
                 <div class="form-group">
@@ -153,7 +153,7 @@
                     <label for="player2email">Email</label>
                     <input type="text" class="form-control @error('player2email') is-invalid @enderror"
                            id="player2email"
-                           name="player2email" value="{{old('player2email')}}" placeholder="Player Facebook Id link">
+                           name="player2email" value="{{old('player2email')}}" placeholder="Player Email Address">
                     @error('player2email')
                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -178,7 +178,7 @@
 
                     <input id="player2password" type="password" placeholder="Enter Player 2 Password"
                            class="form-control @error('player2password') is-invalid @enderror" name="player2password"
-                           required autocomplete="new-password">
+                            autocomplete="new-password">
 
                     @error('player2password')
                     <span class="invalid-feedback" role="alert">
@@ -190,7 +190,7 @@
                 <div class="form-group">
                     <label for="player2password-confirm">{{ __('Confirm Password') }}</label>
                     <input id="player2password-confirm" placeholder="Confirm Player 2 Password" type="password"
-                           class="form-control" name="player2password_confirmation" required
+                           class="form-control" name="player2password_confirmation"
                            autocomplete="new-password">
                 </div>
                 <div class="form-group">
@@ -253,7 +253,7 @@
                     <h4>Md. Saiful Islam (Sagar)</h4>
                     <ul>
                         <li>Mobile: 01703662756</li>
-                        <li>Facebook: <a href="https://www.facebook.com">www.facebook.com</a></li>
+                        <li>Facebook: <a href="https://www.facebook.com/shopnilsagar89">www.facebook.com/shopnilsagar89</a></li>
                         <li>Email: lpop08783@gmail.com</li>
                     </ul>
                 </div>
@@ -268,4 +268,6 @@
         <hr>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
+    <br>
+    <br>
 @endsection

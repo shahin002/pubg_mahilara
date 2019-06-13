@@ -6,6 +6,7 @@ use App\Team;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
 use function PHPSTORM_META\elementType;
@@ -46,14 +47,14 @@ class PubgController extends Controller
             "player1fb" => ['required', 'string', 'max:255'],
             "player1email" => ['required', 'string', 'max:255', 'unique:users,email'],
             "player1password" => ['required', 'string', 'min:8', 'confirmed'],
-            "player1picture" => ['image'],
+            "player1picture" => ['required','image','max:500'],
             "player2name" => ['required', 'string', 'max:255'],
             "player2id" => ['required', 'string', 'max:255', 'unique:users,pubg_id'],
             "player2mobile" => ['required', 'string', 'max:255', 'unique:users,mobile'],
             "player2fb" => ['required', 'string', 'max:255'],
             "player2email" => ['required', 'string', 'max:255', 'unique:users,email'],
             "player2password" => ['required', 'string', 'min:8', 'confirmed'],
-            "player2picture" => ['image'],
+            "player2picture" => ['required','image','max:500'],
             "team_name" => ['required', 'string', 'max:255'],
             "payment_amount" => ['required', 'integer'],
             "payment_through" => ['required', 'string', 'max:255'],
